@@ -1,1 +1,61 @@
 /*  your css code here. If applicable */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+    /* background-color: aquamarine; */
+
+}
+
+.circles {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.circle {
+    height: 30px;
+    width: 30px;
+    border-radius: 30%;
+    background-color: white;
+    margin-left: 15px;
+    border: 2px solid black;
+
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    transition: background-color 0.3s ease;
+}
+
+.active {
+
+    background-color: rgb(83, 34, 167);
+}
+
+button :disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
